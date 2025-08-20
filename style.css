@@ -21,11 +21,12 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #ffffff;
+    color: #2d3748;
     padding: 80px 0;
     position: relative;
     overflow: hidden;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .hero::before {
@@ -35,7 +36,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="50" cy="50" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="50" cy="50" r="1" fill="%23f7fafc" opacity="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
     opacity: 0.3;
 }
 
@@ -53,10 +54,8 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(45deg, #ff6b6b, #feca57);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #e53e3e;
+    font-weight: 900;
 }
 
 .pain-points {
@@ -71,20 +70,20 @@ body {
 }
 
 .pain-item {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: #ffffff;
     padding: 25px;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #e2e8f0;
     display: flex;
     align-items: flex-start;
     gap: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .pain-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .pain-icon {
@@ -104,12 +103,12 @@ body {
 }
 
 .product-name {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(15px);
+    background: #f7fafc;
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid #e2e8f0;
     display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .product-title {
@@ -120,10 +119,8 @@ body {
 }
 
 .ai-team {
-    background: linear-gradient(45deg, #feca57, #ff9ff3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #3182ce;
+    font-weight: 900;
 }
 
 .product-subtitle {
@@ -135,7 +132,7 @@ body {
 /* Benefits Section */
 .benefits {
     padding: 80px 0;
-    background: #f8fafc;
+    background: #ffffff;
 }
 
 .section-title {
@@ -154,18 +151,18 @@ body {
 }
 
 .benefit-card {
-    background: white;
+    background: #ffffff;
     padding: 40px 30px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e2e8f0;
 }
 
 .benefit-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-icon {
@@ -188,7 +185,7 @@ body {
 /* Team Members Section */
 .team-members {
     padding: 80px 0;
-    background: white;
+    background: #f8fafc;
 }
 
 .members-grid {
@@ -198,13 +195,14 @@ body {
 }
 
 .member-card {
-    background: linear-gradient(145deg, #f7fafc, #edf2f7);
+    background: #ffffff;
     padding: 30px;
     border-radius: 20px;
     border: 1px solid #e2e8f0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .member-card::before {
@@ -214,21 +212,21 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: #3182ce;
 }
 
 .member-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .member-card.mystery {
-    background: linear-gradient(145deg, #2d3748, #4a5568);
+    background: #2d3748;
     color: white;
 }
 
 .member-card.mystery::before {
-    background: linear-gradient(45deg, #feca57, #ff9ff3);
+    background: #f6ad55;
 }
 
 .member-header {
@@ -241,7 +239,7 @@ body {
 .member-avatar {
     width: 60px;
     height: 60px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: #3182ce;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -252,7 +250,7 @@ body {
 }
 
 .member-card.mystery .member-avatar {
-    background: linear-gradient(45deg, #feca57, #ff9ff3);
+    background: #f6ad55;
     color: #2d3748;
 }
 
@@ -268,13 +266,13 @@ body {
 }
 
 .member-name {
-    color: #667eea;
+    color: #3182ce;
     font-weight: 600;
     font-size: 1.1rem;
 }
 
 .member-card.mystery .member-name {
-    color: #feca57;
+    color: #f6ad55;
 }
 
 .member-description {
@@ -288,11 +286,11 @@ body {
 }
 
 .member-note {
-    background: rgba(102, 126, 234, 0.1);
+    background: rgba(49, 130, 206, 0.1);
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #3182ce;
 }
 
 .member-note p {
@@ -313,7 +311,7 @@ body {
 /* Target Audience Section */
 .target-audience {
     padding: 80px 0;
-    background: #f7fafc;
+    background: #ffffff;
 }
 
 .audience-grid {
@@ -325,17 +323,17 @@ body {
 .not-recommended, .recommended {
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .not-recommended {
-    background: linear-gradient(145deg, #fed7d7, #feb2b2);
-    border: 1px solid #fc8181;
+    background: #ffffff;
+    border: 2px solid #fed7d7;
 }
 
 .recommended {
-    background: linear-gradient(145deg, #c6f6d5, #9ae6b4);
-    border: 1px solid #68d391;
+    background: #ffffff;
+    border: 2px solid #c6f6d5;
 }
 
 .not-recommended h3, .recommended h3 {
@@ -383,19 +381,19 @@ body {
 /* Pricing Section */
 .pricing {
     padding: 80px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #f8fafc;
+    color: #2d3748;
 }
 
 .pricing-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background: #ffffff;
     padding: 50px;
     border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #e2e8f0;
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .pricing-card h2 {
@@ -418,17 +416,15 @@ body {
 .price {
     font-size: 4rem;
     font-weight: 900;
-    background: linear-gradient(45deg, #feca57, #ff9ff3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #3182ce;
 }
 
 .price-update {
     margin-bottom: 40px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #f7fafc;
     border-radius: 15px;
+    border: 1px solid #e2e8f0;
 }
 
 .update-notice {
@@ -442,7 +438,7 @@ body {
 }
 
 .new-price {
-    color: #feca57;
+    color: #3182ce;
     font-weight: 700;
 }
 
@@ -470,10 +466,10 @@ body {
 }
 
 .next-update {
-    background: rgba(255, 255, 255, 0.1);
+    background: #f7fafc;
     padding: 20px;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #e2e8f0;
 }
 
 .next-update p {
@@ -484,7 +480,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background: #f8fafc;
+    background: #ffffff;
     text-align: center;
 }
 
@@ -513,16 +509,17 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    background: white;
+    background: #ffffff;
     padding: 25px 35px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border: 1px solid #e2e8f0;
     transition: transform 0.3s ease;
 }
 
 .contact-item:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .contact-icon {
@@ -537,7 +534,7 @@ body {
 }
 
 .contact-item p {
-    color: #667eea;
+    color: #3182ce;
     font-weight: 600;
     margin: 0;
 }
@@ -545,8 +542,8 @@ body {
 /* CTA Section */
 .cta {
     padding: 80px 0;
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-    color: white;
+    background: #f8fafc;
+    color: #2d3748;
     text-align: center;
 }
 
@@ -560,11 +557,11 @@ body {
 .cta-content p {
     font-size: 1.3rem;
     margin-bottom: 40px;
-    opacity: 0.9;
+    color: #4a5568;
 }
 
 .cta-button {
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: #3182ce;
     color: white;
     font-size: 1.3rem;
     font-weight: 700;
@@ -573,7 +570,7 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -594,26 +591,28 @@ body {
 }
 
 .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(49, 130, 206, 0.4);
+    background: #2c5aa0;
 }
 
 .cta-note {
     margin-top: 20px;
     font-size: 1rem;
-    opacity: 0.8;
+    color: #718096;
 }
 
 /* Footer */
 footer {
-    background: #2d3748;
-    color: white;
+    background: #f8fafc;
+    color: #4a5568;
     text-align: center;
     padding: 30px 0;
+    border-top: 1px solid #e2e8f0;
 }
 
 footer p {
-    opacity: 0.8;
+    color: #718096;
 }
 
 /* Responsive Design */
@@ -887,16 +886,16 @@ footer p {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f7fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: #3182ce;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, #5a6fd8, #6a4190);
+    background: #2c5aa0;
 }
 
 /* Extra small devices (phones in portrait) */
